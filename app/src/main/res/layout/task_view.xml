@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--android:layout_alignParentLeft="true" from first button
+    android:layout_alignParentRight="true" from first button
+    android:layout_alignParentLeft="true" from 2nd button-->
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/started_toggle"
+        android:id="@+id/StartedButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/completed_toggle"
+        android:id="@+id/CompletedButton"
+        android:layout_below="@+id/StartedButton"
+        android:layout_alignEnd="@+id/StartedButton" />
+
+    <ExpandableListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/task_status"
+        android:choiceMode="multipleChoice"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:visibility="visible"
+        android:layout_alignEnd="@+id/StartedButton"
+        android:touchscreenBlocksFocus="false"
+        android:layout_below="@+id/CompletedButton"
+        android:drawSelectorOnTop="false" />
+</RelativeLayout>

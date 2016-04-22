@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">StudyGroup</string>
+    <string name="action_settings">Settings</string>
+    <string name="started_toggle">Started</string>
+    <string name="completed_toggle">Completed</string>
+    <string name="add_task">Add an assignment</string>
+    <string name="dueDate">MM/DD/YYYY</string>
+    <string name="taskName">Task Name:</string>
+    <string name="className">Class:</string>
+    <string name="due_date">Due Date:</string>
+    <string name="save_button">Save</string>
+    <string name="cancel_button">Cancel</string>
+</resources>
